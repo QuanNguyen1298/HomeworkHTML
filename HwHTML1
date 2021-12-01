@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hoc HTML</title>
+        <style>
+            .flex-container {
+              display: flex;
+            }
+            
+            .flex-container > div {
+              width: 200px;
+              margin: 150px;
+              text-align: left;
+              line-height: 40px;
+              font-size: 15px;
+              flex-basis: 100px;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>STUDENT SURVEY</h1>
+        <h4>Please enter following survey to help us making better courses</h4>
+        <form> 
+        <div class="flex-container">
+            <div>
+                <label for="Full name">Full name:</label>
+                <label for="Sex">Sex:</label>
+                <label for="3">Upload your picture</label>
+                <label for="4">When do you want to start the course?</label>
+                <label for="5">What time do you want to start a lecture?</label>
+                <label for="6">How many (maximum) student in a class?</label>
+                <label for="7">How good the program was?</label>
+                <label for="8">Please select your favorite courses</label>
+                <button type="button">Send</button>
+                <button type="button">Clear</button>
+            </div>
+            <div>
+                <input type="text" id="Full name" name="Full name">
+                <input type="radio" id="Sex" name="Sex">
+                <label for="Male">Male</label>
+                <input type="radio" id="Sex" name="Sex">
+                <label for="Female">Female</label>
+                <input type="file" id="3">
+                <input type="datetime-local" name="4">
+                <input type="date" name="5">
+                <input type="text" id="6">
+                <input type="range" id="7">
+                <select name="8">
+                    <optgroup label="Term1">
+                      <option value="C Programming">C Programming</option>
+                      <option value="C++ Programming">C++ Programming</option>
+                      <option value="Database">Database</option>
+                    </optgroup>
+                    <optgroup label="Term2">
+                      <option value="Computer Architecture">Computer Architecture</option>
+                      <option value="AI">AI</option>
+                    </optgroup>
+                  </select>
+            </div>
+            <div>
+                <label for="9">Please write any comment:</label>
+                <input type="email" id="9">
+            </div>
+        </div>
+        </form>
+    </body>
+</html>
